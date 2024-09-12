@@ -1,0 +1,11 @@
+export { default as Logout } from './logout';
+export { default as KababMenu } from './kababMenu';
+export { default as Person } from './person';
+export { default as ArrowRight } from './arrowRight';
+export { default as ArrowUp } from './arrowUp';
+export { default as ArrowLeft } from './arrowLeft';
+export { default as ArrowDown } from './arrowDown';
+export { default as Plus } from './plus';
+export { default as File } from './file';
+export { default as Pencil } from './pencil';
+export { default as CircleX } from './circleX';
