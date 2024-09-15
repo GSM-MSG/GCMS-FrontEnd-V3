@@ -86,15 +86,18 @@ const config: Config = {
       },
       spacing: {
         '0': '0',
-        '1': '0.5rem', //8px
-        '2': '0.75rem', //12px
-        '3': '1rem', // 16px
-        '4': '1.25rem', // 20px
+        '1': '0.25rem', //4px
+        '2': '0.5rem', //8px
+        '3': '0.75rem', //12px
+        '4': '1rem', // 16px
+        '5': '1.25rem', // 20px
+        '6': '1.5rem', // 24px
         px: '1px',
       },
       borderRadius: {
         none: '0',
         sm: '0.5rem', //8px
+        md: '0.75rem', // 12px
       },
       borderWidth: {
         '1': '0.0625rem',

@@ -10,9 +10,9 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          '!text-black px-4 py-1 bg-main-500 active:bg-main-300 disabled:bg-gray-100',
+          '!text-black px-5 py-2 bg-main-500 active:bg-main-300 disabled:bg-gray-100',
         Secondary:
-          '!text-main-500 px-4 py-1 bg-black border-main-500 border-1 border-solid active:!text-main-300 active:border-main-300 disabled:border-gray-300',
+          '!text-main-500 px-5 py-2 bg-black border-main-500 border-1 border-solid active:!text-main-300 active:border-main-300 disabled:border-gray-300',
         Text: '!text-main-500 active:!text-main-300',
       },
       size: {
