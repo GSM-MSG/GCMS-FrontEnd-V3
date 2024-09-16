@@ -9,3 +9,4 @@ export { default as Plus } from './plus';
 export { default as File } from './file';
 export { default as Pencil } from './pencil';
 export { default as CircleX } from './circleX';
+export { default as X } from './x';
