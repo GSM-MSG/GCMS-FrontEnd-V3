@@ -1,6 +1,6 @@
-import './globals.css';
-import './fonts/fonts.css';
-import TanstackProviders from '@/utils/TanstackProviders';
+import TanstackProviders from '@/lib/TanstackProviders';
+import { pretendard } from '@/styles/fonts';
+import '../styles/globals.css';
 
 export default function RootLayout({
   children,
@@ -8,7 +8,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko">
+    <html lang="ko" className={pretendard.variable}>
       <body className="font-Pretendard">
         <TanstackProviders>{children}</TanstackProviders>
       </body>
