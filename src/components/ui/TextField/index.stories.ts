@@ -7,7 +7,6 @@ const meta = {
   tags: ['autodocs'],
   argTypes: {
     variant: {
-      control: { type: 'select' },
       options: ['default'],
     },
   },
@@ -23,7 +22,9 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     variant: 'default',
-    placeholder: '다음',
+    placeholder: '텍스트를 입력해주세요',
     title: '전공동아리',
+    error: false,
+    errorMessage: '에러 메시지',
   },
 };
