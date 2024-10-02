@@ -19,11 +19,13 @@ const config: Config = {
           '450': '#74747F',
           '600': '#9F9FA8',
           '800': '#CFCFD3',
+          '900': '#E7E7E9',
         },
         main: {
           '300': '#71A617',
           '400': '#8DCE1C',
           '500': '#A4E335',
+          '600': '#C8EE86',
           '800': '#DAF4AE',
         },
         transparent: 'transparent',
@@ -87,12 +89,16 @@ const config: Config = {
       },
       spacing: {
         '0': '0',
+        '0.5': '0.1875rem',
         '1': '0.25rem', //4px
         '2': '0.5rem', //8px
         '3': '0.75rem', //12px
         '4': '1rem', // 16px
         '5': '1.25rem', // 20px
         '6': '1.5rem', // 24px
+        '134': '8.375rem', //134px
+        '157': '9.8125rem', // 157px
+        '340': '21.25rem', // 340px
         px: '1px',
       },
       borderRadius: {
