@@ -16,21 +16,21 @@ const RecruitmentStatus = ({
   attendeeCount,
   totalMemberCount,
 }: RecruitmentStatusProps) => {
-  if (recruitmentStatus === 'open') {
-    return <RecruitmentCount recruitmentCount={recruitmentCount} />;
+  switch (recruitmentStatus) {
+    case 'open':
+      return <RecruitmentCount recruitmentCount={recruitmentCount} />;
+    case 'closed':
+      return <RecruitmentClosed />;
+    case 'attendee':
+      return (
+        <Attendee
+          attendeeCount={attendeeCount}
+          totalMemberCount={totalMemberCount}
+        />
+      );
+    default:
+      return null;
   }
-  if (recruitmentStatus === 'closed') {
-    return <RecruitmentClosed />;
-  }
-  if (recruitmentStatus === 'attendee') {
-    return (
-      <Attendee
-        attendeeCount={attendeeCount}
-        totalMemberCount={totalMemberCount}
-      />
-    );
-  }
-  return null;
 };
 
 export default RecruitmentStatus;
