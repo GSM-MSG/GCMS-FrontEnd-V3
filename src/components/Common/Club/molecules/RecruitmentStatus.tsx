@@ -10,12 +10,12 @@ interface RecruitmentStatusProps {
   totalMemberCount?: number;
 }
 
-const RecruitmentStatus: React.FC<RecruitmentStatusProps> = ({
+const RecruitmentStatus = ({
   recruitmentStatus,
   recruitmentCount,
   attendeeCount,
   totalMemberCount,
-}) => {
+}: RecruitmentStatusProps) => {
   if (recruitmentStatus === 'open') {
     return <RecruitmentCount recruitmentCount={recruitmentCount} />;
   }
