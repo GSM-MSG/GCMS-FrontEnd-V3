@@ -5,8 +5,8 @@ const config: Meta<typeof Header> = {
   title: 'Components/Header',
   component: Header,
   tags: ['autodocs'],
-  args: {
-    role: 'student',
+  argTypes: {
+    role: ['student', 'admin'],
   },
 };
 
@@ -14,4 +14,5 @@ export default config;
 
 type Story = StoryObj<typeof Header>;
 
-export const Primary: Story = { args: {} };
+export const Admin: Story = { args: { role: 'admin' } };
+export const Student: Story = { args: { role: 'student' } };
