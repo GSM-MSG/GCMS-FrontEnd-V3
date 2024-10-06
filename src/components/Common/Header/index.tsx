@@ -1,7 +1,8 @@
 'use client';
 
 import Image from 'next/image';
-import React, { useState } from 'react';
+import { usePathname, useRouter } from 'next/navigation';
+import React from 'react';
 import TestProfileImg from '@/assets/png/testProfileImg.png';
 
 interface Props {
@@ -9,13 +10,14 @@ interface Props {
 }
 
 const Header = ({ role }: Props) => {
-  const [path, setPath] = useState(0);
+  const path = usePathname();
+  const route = useRouter();
 
   return (
     <header className="flex items-center justify-center bg-black py-4">
       <div className="flex w-[700px] justify-between">
         <p
-          onClick={() => setPath(0)}
+          onClick={() => route.push('/')}
           className="cursor-pointer text-center text-h3 text-main-500"
         >
           GCMS
@@ -24,17 +26,17 @@ const Header = ({ role }: Props) => {
           {role === 'student' && (
             <>
               <p
-                onClick={() => setPath(1)}
+                onClick={() => route.push('/myClub')}
                 className={`cursor-pointer text-body2 ${
-                  path === 1 ? 'text-main-500' : 'text-gray-600'
+                  path === '/myClub' ? 'text-main-500' : 'text-gray-600'
                 }`}
               >
                 내 동아리
               </p>
               <p
-                onClick={() => setPath(2)}
+                onClick={() => route.push('/community')}
                 className={`cursor-pointer text-body2 ${
-                  path === 2 ? 'text-main-500' : 'text-gray-600'
+                  path === '/community' ? 'text-main-500' : 'text-gray-600'
                 }`}
               >
                 커뮤니티
@@ -42,9 +44,9 @@ const Header = ({ role }: Props) => {
             </>
           )}
           <p
-            onClick={() => setPath(3)}
+            onClick={() => route.push('/notice')}
             className={`cursor-pointer text-body2 ${
-              path === 3 ? 'text-main-500' : 'text-gray-600'
+              path === '/notice' ? 'text-main-500' : 'text-gray-600'
             }`}
           >
             공지사항
@@ -54,7 +56,7 @@ const Header = ({ role }: Props) => {
             height={24}
             src={TestProfileImg}
             alt="프로필"
-            onClick={() => setPath(4)}
+            onClick={() => route.push('my')}
             className="cursor-pointer rounded-full text-body2 text-gray-600"
           />
         </div>
