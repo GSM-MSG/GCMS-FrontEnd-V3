@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 import React from 'react';
-import { Club, Community, Home, Notice, PersonRound } from '@/assets/icons';
+import { MobileNavBar } from './MobileNav';
 import TestProfileImg from '@/assets/png/testProfileImg.png';
 
 interface Props {
@@ -61,23 +61,7 @@ const Header = ({ role }: Props) => {
             className="cursor-pointer rounded-full text-body2 text-gray-600"
           />
         </div>
-        <div className="hidden mobile:fixed mobile:bottom-0 mobile:left-0 mobile:flex mobile:w-full mobile:justify-between mobile:bg-black mobile:px-5">
-          <div onClick={() => route.push('/')} className="px-5 py-4">
-            <Home current={path === '/'} />
-          </div>
-          <div onClick={() => route.push('/myClub')} className="px-5 py-4">
-            <Club current={path === '/myClub'} />
-          </div>
-          <div onClick={() => route.push('/community')} className="px-5 py-4">
-            <Community current={path === '/community'} />
-          </div>
-          <div onClick={() => route.push('/notice')} className="px-5 py-4">
-            <Notice current={path === '/notice'} />
-          </div>
-          <div onClick={() => route.push('/my')} className="px-5 py-4">
-            <PersonRound current={path === '/my'} />
-          </div>
-        </div>
+        <MobileNavBar />
       </div>
     </header>
   );
