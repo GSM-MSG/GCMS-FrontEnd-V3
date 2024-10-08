@@ -1,4 +1,4 @@
-import Header from '@/components/Common/Header';
+import Header from '@/components/Common/Header/organisms/Header';
 import { Button } from '@/components/ui/Button';
 
 export default function Home() {
