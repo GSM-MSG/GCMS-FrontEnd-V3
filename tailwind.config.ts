@@ -80,7 +80,7 @@ const config: Config = {
         h1: ['3rem', { lineHeight: '3.625rem', fontWeight: '600' }],
         h2: ['2.25rem', { lineHeight: '2.6875rem', fontWeight: '600' }],
         h3: ['1.5rem', { lineHeight: '1.9375rem', fontWeight: '600' }],
-        h4: ['1rem', { lineHeight: '1.6875rem', fontWeight: '600' }],
+        h4: ['1.125rem', { lineHeight: '1.6875rem', fontWeight: '600' }],
         h5: ['1rem', { lineHeight: '1.5rem', fontWeight: '600' }],
         body1: ['1rem', { lineHeight: '1.5rem', fontWeight: '400' }],
         body2: ['1rem', { lineHeight: '1.75rem', fontWeight: '400' }],
@@ -117,6 +117,9 @@ const config: Config = {
         '80': '0.8',
         '100': '1',
       },
+    },
+    screens: {
+      mobile: { max: '640px' },
     },
   },
   plugins: [require('tailwindcss-animate')],

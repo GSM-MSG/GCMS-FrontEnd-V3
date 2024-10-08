@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 import React from 'react';
+import { MobileNavBar } from './MobileNav';
 import TestProfileImg from '@/assets/png/testProfileImg.png';
 
 interface Props {
@@ -14,15 +15,15 @@ const Header = ({ role }: Props) => {
   const route = useRouter();
 
   return (
-    <header className="flex items-center justify-center bg-black py-4">
-      <div className="flex w-[700px] justify-between">
+    <header className="flex items-center justify-center bg-black py-4 mobile:px-5 mobile:py-3">
+      <div className="flex w-full max-w-[700px] justify-between">
         <p
           onClick={() => route.push('/')}
-          className="cursor-pointer text-center text-h3 text-main-500"
+          className="cursor-pointer text-center text-h3 text-main-500 mobile:text-h4"
         >
           GCMS
         </p>
-        <div className="flex items-center gap-12">
+        <div className="flex items-center gap-12 mobile:hidden">
           {role === 'student' && (
             <>
               <p
@@ -60,6 +61,7 @@ const Header = ({ role }: Props) => {
             className="cursor-pointer rounded-full text-body2 text-gray-600"
           />
         </div>
+        <MobileNavBar />
       </div>
     </header>
   );
