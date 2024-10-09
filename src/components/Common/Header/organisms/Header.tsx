@@ -11,7 +11,7 @@ interface Props {
 
 const Header = ({ role }: Props) => {
   return (
-    <header className="flex items-center justify-center bg-black py-4 mobile:px-5 mobile:py-3">
+    <header className="flex items-center justify-center bg-black px-5 py-4 mobile:py-3">
       <div className="flex w-full max-w-[700px] justify-between">
         <TitleText />
         <NavLinks role={role} />
