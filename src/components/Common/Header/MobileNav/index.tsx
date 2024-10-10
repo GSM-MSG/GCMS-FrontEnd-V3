@@ -14,7 +14,7 @@ export const MobileNavBar = () => {
   const currentPath = usePathname();
 
   return (
-    <nav className="hidden mobile:fixed mobile:bottom-0 mobile:left-0 mobile:flex mobile:w-full mobile:justify-between mobile:bg-black mobile:px-5">
+    <nav className="hidden mobile:fixed mobile:bottom-0 mobile:left-0 mobile:z-50 mobile:flex mobile:w-full mobile:justify-between mobile:bg-black mobile:px-5">
       {navItems.map(({ path, icon: Icon }) => (
         <button
           key={path}

@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import Club from './Club';
 
 const meta = {
-  title: 'Components/Club',
+  title: 'Components/Common/Club',
   component: Club,
   tags: ['autodocs'],
   argTypes: {
