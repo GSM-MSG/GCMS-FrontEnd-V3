@@ -1,7 +1,7 @@
 import React from 'react';
 import Club from '@/components/Common/Club/organisms/Club';
 
-const ClubList = ({ category }: { category: string }) => {
+const ClubList = ({ category }: { category?: string }) => {
   return (
     <div className="grid w-fit grid-cols-2 place-items-center gap-5 mobile:grid-cols-1">
       {[...Array(8)].map((_, index) => (
