@@ -20,19 +20,15 @@ const Footer = ({
   selectedPeriod,
   reasons,
 }: Props) => (
-  <div className="mt-4 grid h-14 w-full grid-cols-2 border-t">
+  <div className="mt-4 grid h-14 w-full grid-cols-2">
     <button
-      className="w-full bg-transparent text-[#FFF]"
+      className="w-full border-0 border-r-[0.33px] border-t-[0.33px] border-solid border-r-[#4B5563] border-t-[#4B5563] bg-transparent text-[#FFF]"
       onClick={button1Click}
-      style={{
-        borderTop: '0.33px solid #4B5563',
-        borderRight: '0.33px solid #4B5563',
-      }}
     >
       {button1}
     </button>
     <button
-      className={`w-full bg-transparent text-[${type === 'confirm' ? '#FFF' : '#A4E335'}]`}
+      className={`w-full bg-transparent text-[${type === 'confirm' ? '#FFF' : '#A4E335'}] border-0 border-t-[0.33px] border-solid border-t-[#4B5563]`}
       onClick={() => {
         if (type === 'attendanceCheck') {
           button2Click(selectedPeriod, reasons);
@@ -40,7 +36,6 @@ const Footer = ({
           button2Click();
         }
       }}
-      style={{ borderTop: '0.33px solid #4B5563' }}
     >
       {button2}
     </button>
