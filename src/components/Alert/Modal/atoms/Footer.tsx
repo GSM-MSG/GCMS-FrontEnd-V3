@@ -22,13 +22,13 @@ const Footer = ({
 }: Props) => (
   <div className="mt-4 grid h-14 w-full grid-cols-2">
     <button
-      className="w-full border-0 border-r-[0.33px] border-t-[0.33px] border-solid border-r-[#4B5563] border-t-[#4B5563] bg-transparent text-[#FFF]"
+      className="w-full border-0 border-r-[0.33px] border-t-[0.33px] border-solid border-r-gray-300 border-t-gray-300 bg-transparent text-[#FFF]"
       onClick={button1Click}
     >
       {button1}
     </button>
     <button
-      className={`w-full bg-transparent text-[${type === 'confirm' ? '#FFF' : '#A4E335'}] border-0 border-t-[0.33px] border-solid border-t-[#4B5563]`}
+      className={`w-full bg-transparent text-[${type === 'confirm' ? '#FFF' : '#A4E335'}] border-0 border-t-[0.33px] border-solid border-t-gray-300`}
       onClick={() => {
         if (type === 'attendanceCheck') {
           button2Click(selectedPeriod, reasons);
