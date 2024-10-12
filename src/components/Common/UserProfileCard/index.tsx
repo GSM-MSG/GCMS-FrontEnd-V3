@@ -16,11 +16,11 @@ const UserProfileCard = ({ profileUrl, role, name }: Props) => {
         width={36}
         height={36}
       />
-      <div className="w-[55px]">
-        <p className="font-pretendard text-left text-[10px] font-normal leading-[18px] text-[#FFFFFF66]">
+      <div className="w-full">
+        <p className="font-pretendard text-xs font-[11px] leading-[18px] text-gray-400">
           {role}
         </p>
-        <p className="font-pretendard text-left text-[14px] font-normal text-white">
+        <p className="font-pretendard text-text-3 font-normal text-white">
           {name}
         </p>
       </div>
