@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import Modal from '.';
 
 const config: Meta<typeof Modal> = {
-  title: 'Modal',
+  title: 'Components/Modal',
   component: Modal,
   argTypes: {
     button1Click: { action: 'button1Click' },

@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import UserProfileCard from './index';
 
 const config: Meta<typeof UserProfileCard> = {
-  title: 'UserProfileCard',
+  title: 'Components/UserProfileCard',
   component: UserProfileCard,
 };
 
