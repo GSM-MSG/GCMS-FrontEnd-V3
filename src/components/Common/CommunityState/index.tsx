@@ -1,14 +1,18 @@
-'use client';
-
-import { usePathname } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import React from 'react';
 import { ArrowLeft } from '@/assets/icons';
 
-const Index = () => {
+const CommunityState = () => {
+  const router = useRouter();
   const pathname = usePathname();
+
+  const handleGoBack = () => {
+    router.back();
+  };
+
   return (
-    <div className="flex w-full items-center">
-      <div className="flex-none">
+    <div className="flex w-full items-center px-5 py-4 mobile:py-3">
+      <div className="flex-none cursor-pointer" onClick={handleGoBack}>
         <ArrowLeft />
       </div>
       <div className="flex flex-grow justify-center">
@@ -20,4 +24,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default CommunityState;
