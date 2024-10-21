@@ -1,3 +1,5 @@
+'use client';
+
 import { useRouter, usePathname } from 'next/navigation';
 import React from 'react';
 import { ArrowLeft } from '@/assets/icons';
