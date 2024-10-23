@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import CommunityState from '@/components/Common/CommunityState';
-import Header from '@/components/Common/Header';
+import Header from '@/components/Common/Header/organisms/Header';
 import { TextArea } from '@/components/Community/atoms/TextArea';
 import { Button } from '@/components/ui/Button';
 

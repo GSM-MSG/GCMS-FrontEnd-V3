@@ -1,5 +1,5 @@
 import ClubList from '@/components/Common/Club/Templates/ClubList';
-import Header from '@/components/Common/Header';
+import Header from '@/components/Common/Header/organisms/Header';
 
 export default function Clubs() {
   return (

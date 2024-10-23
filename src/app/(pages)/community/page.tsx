@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import Header from '@/components/Common/Header';
+import Header from '@/components/Common/Header/organisms/Header';
+
 import CreatePostButton from '@/components/Community/atoms/CreatePostButton';
 import CommunityList from '@/components/Community/organisms/CommunityList';
 

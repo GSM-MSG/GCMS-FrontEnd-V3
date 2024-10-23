@@ -1,5 +1,6 @@
 import ClubList from '@/components/Common/Club/Templates/ClubList';
-import Header from '@/components/Common/Header';
+import Header from '@/components/Common/Header/organisms/Header';
+
 import Alarm from '@/components/Home/atoms/Alarm';
 import Navigate from '@/components/Home/atoms/Navigation';
 

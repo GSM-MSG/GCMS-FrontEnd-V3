@@ -6,7 +6,7 @@ const navItems = [
   { path: '/myClub', icon: Club },
   { path: '/community', icon: Community },
   { path: '/notice', icon: Notice },
-  { path: '/profile', icon: PersonRound },
+  { path: '/my', icon: PersonRound },
 ];
 
 export const MobileNavBar = () => {
