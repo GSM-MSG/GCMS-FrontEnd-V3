@@ -96,9 +96,8 @@ const config: Config = {
         '4': '1rem', // 16px
         '5': '1.25rem', // 20px
         '6': '1.5rem', // 24px
-        '134': '8.375rem', //134px
-        '157': '9.8125rem', // 157px
-        '340': '21.25rem', // 340px
+        '7': '1.75rem', // 28px
+        '8': '2rem', // 32px
         px: '1px',
       },
       borderRadius: {
