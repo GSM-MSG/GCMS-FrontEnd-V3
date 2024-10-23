@@ -4,6 +4,7 @@ export default function MyPage() {
   return (
     <div>
       <Header role="student" />
+      my
     </div>
   );
 }
