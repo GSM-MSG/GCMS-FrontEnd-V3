@@ -18,6 +18,7 @@ const config: Config = {
           '300': '#51515A',
           '450': '#74747F',
           '600': '#9F9FA8',
+          '700': '#B7B7BE',
           '800': '#CFCFD3',
           '900': '#E7E7E9',
         },
@@ -116,8 +117,12 @@ const config: Config = {
         '80': '0.8',
         '100': '1',
       },
+      dropShadow: {
+        menubar: '0px 1px 8px rgba(0, 0, 0, 0.25)',
+      },
     },
     screens: {
+      tablet: { max: '1080px' },
       mobile: { max: '640px' },
     },
   },
