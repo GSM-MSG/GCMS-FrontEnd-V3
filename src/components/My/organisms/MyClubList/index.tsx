@@ -4,7 +4,7 @@ import Club from '@/components/Common/Club/organisms/Club';
 const MyClubList = () => {
   return (
     <div className="grid w-full max-w-[700px] grid-cols-2 place-items-center gap-5 mobile:grid-cols-1">
-      {[...Array(7)].map((_, index) => (
+      {[...Array(3)].map((_, index) => (
         <Club
           key={index}
           notion={true}
