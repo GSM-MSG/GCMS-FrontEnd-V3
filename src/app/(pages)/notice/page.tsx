@@ -1,4 +1,5 @@
-import Header from '@/components/Common/Header';
+import Header from '@/components/Common/Header/organisms/Header';
+
 import NoticeDetail from '@/components/Notice/atoms/NoticeDetail';
 import NoticeList from '@/components/Notice/molecules/NoticeList';
 

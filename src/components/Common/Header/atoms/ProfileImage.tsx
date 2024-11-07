@@ -17,7 +17,7 @@ const ProfileImage = ({ src }: Props) => {
         height={24}
         src={src}
         alt="프로필"
-        onClick={() => push('/profile')}
+        onClick={() => push('/my')}
         className="cursor-pointer rounded-full text-body2 text-gray-600"
       />
     </>
